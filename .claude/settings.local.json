@@ -30,7 +30,10 @@
       "Bash(git push:*)",
       "Bash(gh api:*)",
       "Bash(1:*)",
-      "Bash(gh run:*)"
+      "Bash(gh run:*)",
+      "Bash(grep -o 'img/areas/tirannwn' dist/assets/index-*.js)",
+      "Bash(grep 'BASE_URL\\\\|base:' dist/assets/index-*.js)",
+      "Bash(grep:*)"
     ]
   }
 }
