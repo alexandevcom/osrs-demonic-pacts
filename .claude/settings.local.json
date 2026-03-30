@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:oldschool.runescape.wiki)",
+      "Bash(npm create:*)",
+      "Bash(npx:*)",
+      "Bash(cp -r /c/Users/alexa/Projects/osrs-progress/osrs-temp/* /c/Users/alexa/Projects/osrs-progress/)",
+      "Bash(cp /c/Users/alexa/Projects/osrs-progress/osrs-temp/.gitignore /c/Users/alexa/Projects/osrs-progress/)",
+      "Bash(rm -rf /c/Users/alexa/Projects/osrs-progress/osrs-temp)",
+      "Bash(npm install:*)",
+      "Read(//c/Users/alexa/AppData/Local/Temp/claude/C--Users-alexa-Projects-osrs-progress/01179b88-d7a9-48fc-b7cd-c251a6bc5af0/tasks/**)",
+      "Bash(curl -s \"https://oldschool.runescape.wiki/w/Demonic_Pacts_League/Areas\")",
+      "Bash(curl -s \"https://oldschool.runescape.wiki/w/Demonic_Pacts_League/Relics\")",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(file public/img/areas/*.png public/img/relics/*.png)",
+      "Bash(curl -s \"https://oldschool.runescape.wiki/w/Demonic_Pacts_League/Guide\")",
+      "Bash(curl -s \"https://oldschool.runescape.wiki/w/Demonic_Pacts_League\")",
+      "Bash(curl -s \"https://oldschool.runescape.wiki/w/Raging_Echoes_League/Areas\")",
+      "Bash(curl -s \"https://oldschool.runescape.wiki/w/Trailblazer_Reloaded_League/Areas\")",
+      "Bash(curl -sL \"https://oldschool.runescape.wiki/images/Trailblazer_Reloaded_League_area_guide.png\" -o /c/Users/alexa/Projects/osrs-progress/public/img/ui/region-map.png)",
+      "Bash(curl -sL \"https://oldschool.runescape.wiki/images/Get_Ready_For_Leagues_VI-_Demonic_Pacts_-_April_15th_%285%29.png\" -o /c/Users/alexa/Projects/osrs-progress/public/img/ui/league-areas.png)",
+      "Bash(npm list:*)",
+      "Bash(node:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
