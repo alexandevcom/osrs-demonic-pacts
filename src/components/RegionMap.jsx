@@ -151,7 +151,7 @@ export default function RegionMap({ selectedAreas, onToggle, onLock, locked }) {
         {/* Map area */}
         <div style={{ position: 'relative', background: '#2e2a24' }}>
           <img
-            src="/img/ui/league-map-cropped.png"
+            src={`${import.meta.env.BASE_URL}img/ui/league-map-cropped.png`}
             alt="League Areas"
             style={{ width: '100%', display: 'block', imageRendering: 'auto' }}
             draggable={false}

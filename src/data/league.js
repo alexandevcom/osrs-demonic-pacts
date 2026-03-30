@@ -1,11 +1,14 @@
+const B = import.meta.env.BASE_URL;
+const img = (path) => `${B}${path}`;
+
 export const LEAGUE_INFO = {
   name: "Demonic Pacts",
   number: "VI",
   startDate: "2026-04-15",
   endDate: "2026-06-10",
-  logo: "/img/ui/logo.png",
-  icon: "/img/ui/icon.png",
-  relicIcon: "/img/ui/relic-icon.png",
+  logo: img("img/ui/logo.png"),
+  icon: img("img/ui/icon.png"),
+  relicIcon: img("img/ui/relic-icon.png"),
 };
 
 export const AREAS = [
@@ -14,7 +17,7 @@ export const AREAS = [
     name: "Varlamore",
     locked: true,
     description: "Starting area. Home of the Fortis Colosseum, Cam Torum, and the Hunter Guild.",
-    image: "/img/areas/varlamore.png",
+    image: img("img/areas/varlamore.png"),
     highlights: ["Fortis Colosseum", "Cam Torum", "Hunter Guild", "Varlamore Part 3", "Yama encounters"],
   },
   {
@@ -22,7 +25,7 @@ export const AREAS = [
     name: "Karamja",
     locked: true,
     description: "Mandatory first unlock. Tropical island with TzHaar and volcanic adventures.",
-    image: "/img/areas/karamja.png",
+    image: img("img/areas/karamja.png"),
     highlights: ["TzHaar Fight Caves", "Inferno", "Brimhaven Dungeon", "Shilo Village"],
   },
   {
@@ -30,7 +33,7 @@ export const AREAS = [
     name: "Asgarnia",
     locked: false,
     description: "Central kingdom with Falador, the Crafting Guild, and Ice Mountain.",
-    image: "/img/areas/asgarnia.png",
+    image: img("img/areas/asgarnia.png"),
     highlights: ["Corporeal Beast", "GWD (Trollheim)", "Crafting Guild", "Falador", "Port Sarim"],
   },
   {
@@ -38,7 +41,7 @@ export const AREAS = [
     name: "Fremennik",
     locked: false,
     description: "Northern lands of the Fremennik. DKS, Vorkath, and Lunar Isle.",
-    image: "/img/areas/fremennik.png",
+    image: img("img/areas/fremennik.png"),
     highlights: ["Vorkath", "DKS", "Lunar Isle", "Neitiznot", "God Wars Dungeon"],
   },
   {
@@ -46,7 +49,7 @@ export const AREAS = [
     name: "Kandarin",
     locked: false,
     description: "Western lands with Camelot, Seers' Village, and Piscatoris.",
-    image: "/img/areas/kandarin.png",
+    image: img("img/areas/kandarin.png"),
     highlights: ["Zulrah", "Demonic Gorillas", "Camelot", "Ardougne", "Piscatoris"],
   },
   {
@@ -54,7 +57,7 @@ export const AREAS = [
     name: "Desert",
     locked: false,
     description: "The Kharidian Desert with ancient tombs, pyramids, and Raids 3.",
-    image: "/img/areas/desert.png",
+    image: img("img/areas/desert.png"),
     highlights: ["Tombs of Amascut", "Kalphite Queen", "Sophanem", "Nardah", "Ancient Magicks"],
   },
   {
@@ -62,7 +65,7 @@ export const AREAS = [
     name: "Morytania",
     locked: false,
     description: "Haunted swamplands with Theatre of Blood, Barrows, and Darkmeyer.",
-    image: "/img/areas/morytania.png",
+    image: img("img/areas/morytania.png"),
     highlights: ["Theatre of Blood", "Nightmare", "Barrows", "Darkmeyer", "Hallowed Sepulchre"],
   },
   {
@@ -70,7 +73,7 @@ export const AREAS = [
     name: "Tirannwn",
     locked: false,
     description: "Elven lands with Prifddinas, the Gauntlet, and Zalcano.",
-    image: "/img/areas/tirannwn.png",
+    image: img("img/areas/tirannwn.png"),
     highlights: ["The Gauntlet", "Zalcano", "Prifddinas", "Crystal equipment", "Crystal Chest"],
   },
   {
@@ -78,7 +81,7 @@ export const AREAS = [
     name: "Wilderness",
     locked: false,
     description: "Dangerous zone with wilderness bosses and the Revenant Caves.",
-    image: "/img/areas/wilderness.png",
+    image: img("img/areas/wilderness.png"),
     highlights: ["Revenant Caves", "Wilderness bosses", "Mage Arena", "Chaos Altar", "Larran's Chest"],
   },
   {
@@ -86,7 +89,7 @@ export const AREAS = [
     name: "Kourend & Kebos",
     locked: false,
     description: "Great Kourend with Chambers of Xeric, Hydra, and five houses.",
-    image: "/img/areas/kourend.png",
+    image: img("img/areas/kourend.png"),
     highlights: ["Chambers of Xeric", "Alchemical Hydra", "Catacombs", "Konar Slayer", "Tithe Farm"],
   },
 ];
@@ -97,24 +100,9 @@ export const RELICS = [
     unlockRequirement: "Tutorial completion",
     xpBonus: "5x XP",
     choices: [
-      {
-        id: "endless-harvest",
-        name: "Endless Harvest",
-        description: "Auto-banking, infinite gathering nodes, 2x resource yields.",
-        image: "/img/relics/endless-harvest.png",
-      },
-      {
-        id: "barbarian-gathering",
-        name: "Barbarian Gathering",
-        description: "140-slot knapsack, bare-handed gathering at crystal tool level, 50% secondary success on fails.",
-        image: "/img/relics/barbarian-gathering.png",
-      },
-      {
-        id: "abundance",
-        name: "Abundance",
-        description: "Permanent +10 boost to non-combat skills, 2x coins earned per XP.",
-        image: "/img/relics/abundance.png",
-      },
+      { id: "endless-harvest", name: "Endless Harvest", description: "Auto-banking, infinite gathering nodes, 2x resource yields.", image: img("img/relics/endless-harvest.png") },
+      { id: "barbarian-gathering", name: "Barbarian Gathering", description: "140-slot knapsack, bare-handed gathering at crystal tool level, 50% secondary success on fails.", image: img("img/relics/barbarian-gathering.png") },
+      { id: "abundance", name: "Abundance", description: "Permanent +10 boost to non-combat skills, 2x coins earned per XP.", image: img("img/relics/abundance.png") },
     ],
   },
   {
@@ -122,12 +110,7 @@ export const RELICS = [
     unlockRequirement: "750 League Points",
     xpBonus: "8x XP",
     choices: [
-      {
-        id: "woodsman",
-        name: "Woodsman",
-        description: "Auto log burning, simultaneous fletching, 100% hunter success, doubled impling loot.",
-        image: "/img/relics/woodsman.png",
-      },
+      { id: "woodsman", name: "Woodsman", description: "Auto log burning, simultaneous fletching, 100% hunter success, doubled impling loot.", image: img("img/relics/woodsman.png") },
       { id: "tier2-b", name: "Unrevealed", description: "Not yet revealed.", unrevealed: true },
       { id: "tier2-c", name: "Unrevealed", description: "Not yet revealed.", unrevealed: true },
     ],
@@ -137,12 +120,7 @@ export const RELICS = [
     unlockRequirement: "1,500 League Points",
     xpBonus: "1.5x Combat XP · Bigger & Badder · 5x Slayer pts",
     choices: [
-      {
-        id: "evil-eye",
-        name: "Evil Eye",
-        description: "Grants an item to teleport to any unlocked boss or raid entrance instantly.",
-        image: "/img/relics/evil-eye.png",
-      },
+      { id: "evil-eye", name: "Evil Eye", description: "Grants an item to teleport to any unlocked boss or raid entrance instantly.", image: img("img/relics/evil-eye.png") },
       { id: "tier3-b", name: "Unrevealed", description: "Not yet revealed.", unrevealed: true },
       { id: "tier3-c", name: "Unrevealed", description: "Not yet revealed.", unrevealed: true },
     ],
@@ -152,12 +130,7 @@ export const RELICS = [
     unlockRequirement: "2,500 League Points",
     xpBonus: "5x drops · 8x minigame pts",
     choices: [
-      {
-        id: "conniving-clues",
-        name: "Conniving Clues",
-        description: "Clue contracts from caskets, teleport to steps, 1/15 drop rate, min steps & max rolls.",
-        image: "/img/relics/conniving-clues.png",
-      },
+      { id: "conniving-clues", name: "Conniving Clues", description: "Clue contracts from caskets, teleport to steps, 1/15 drop rate, min steps & max rolls.", image: img("img/relics/conniving-clues.png") },
       { id: "tier4-b", name: "Unrevealed", description: "Not yet revealed.", unrevealed: true },
       { id: "tier4-c", name: "Unrevealed", description: "Not yet revealed.", unrevealed: true },
     ],
@@ -177,12 +150,7 @@ export const RELICS = [
     unlockRequirement: "8,000 League Points",
     xpBonus: null,
     choices: [
-      {
-        id: "culling-spree",
-        name: "Culling Spree",
-        description: "Pick from 3 slayer tasks, 50% superior chain-spawn, free slayer perks, helm effect without wearing.",
-        image: "/img/relics/culling-spree.png",
-      },
+      { id: "culling-spree", name: "Culling Spree", description: "Pick from 3 slayer tasks, 50% superior chain-spawn, free slayer perks, helm effect without wearing.", image: img("img/relics/culling-spree.png") },
       { id: "tier6-b", name: "Unrevealed", description: "Not yet revealed.", unrevealed: true },
       { id: "tier6-c", name: "Unrevealed", description: "Not yet revealed.", unrevealed: true },
     ],
@@ -202,17 +170,8 @@ export const RELICS = [
     unlockRequirement: "25,000 League Points",
     xpBonus: null,
     choices: [
-      {
-        id: "minion",
-        name: "Minion",
-        description: "30-min combat companion with AoE attacks, auto-looting, boosted by Zamorak items.",
-        image: "/img/relics/minion.png",
-      },
-      {
-        id: "flask-of-fervour",
-        name: "Flask of Fervour",
-        description: "Full HP/Prayer/spec restore, 3 AoE explosions, invulnerability, cooldown reduced by damage.",
-      },
+      { id: "minion", name: "Minion", description: "30-min combat companion with AoE attacks, auto-looting, boosted by Zamorak items.", image: img("img/relics/minion.png") },
+      { id: "flask-of-fervour", name: "Flask of Fervour", description: "Full HP/Prayer/spec restore, 3 AoE explosions, invulnerability, cooldown reduced by damage." },
       { id: "tier8-c", name: "Unrevealed", description: "Not yet revealed.", unrevealed: true },
     ],
   },
